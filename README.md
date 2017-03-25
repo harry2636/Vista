@@ -10,11 +10,11 @@ Video sharing website that enables users to share videos from different sites. U
 $ npm install -g webpack babel nodemon cross-env
 $ npm install
 ```
-Also, mongoDB should be run on default port(27017).
+Also, mongoDB should be run on default port (27017).
 
 ## How To Start
 
-### (1) Operate local vista web site.
+### (1) Operate local web site.
 ```sh
 $ npm run start
 ```
