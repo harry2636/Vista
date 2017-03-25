@@ -83,7 +83,7 @@ function postVideo(videoIframeTag) {
             });
         },
         error:function(data){
-            chrome.tabs.create({url:"http://localhost:4000/login"});
+            chrome.tabs.create({url:"http://localhost:3000/login"});
         }
     });
 }
