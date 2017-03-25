@@ -1,7 +1,6 @@
 function onWindowLoad() {
     chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
         var url = tabs[0].url;
-        document.body.innerText = url;
         $.ajax({
             type: "GET",
             dataType: "json",
@@ -23,10 +22,22 @@ function onWindowLoad() {
                 });
                 
                 if (htmlSuccess) {
-                    document.body.innerHTML = title;
-                    document.body.innerHTML += htmlIframeTag;
-                    var sendData = "<h4>" + title + "</h2>" + htmlIframeTag;
+                    var successLink = $("<a/>");
+                    successLink.attr("href", "http://localhost:3000");
+                    successLink.append($("<h3/>").text("Sharing Suceeded!"));
+                    $("body").html(successLink);
+                    $('body').on('click', 'a', function(){
+                        chrome.tabs.create({url: $(this).attr('href')});
+                    return false;
+                    });
+
+                    document.body.innerHTML += 
+                        "<h4>" + title + "</h4>" +
+                        htmlIframeTag;
+                    var sendData = "<h4>" + title + "</h4>" + htmlIframeTag;
                     postVideo(sendData);
+                } else {
+                    document.body.innerHTML = "<h3/>Failed to save the video of current page.</h3>";
                 }
             }
         });
