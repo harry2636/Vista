@@ -3,7 +3,10 @@ Video sharing website that enables users to share videos from different sites. U
 
 ## Demo
 ### Demo video is available in [https://youtu.be/APZCwddL2y4](https://youtu.be/APZCwddL2y4)
-![video_intro](/img/video_thumbnail.png)
+
+<a href="https://youtu.be/APZCwddL2y4"><img src="/img/video_thumbnail.png" alt="video_intro" width="70%" ></a>
+<br/>
+
 
 ## Description
 Vista is a video sharing web site where users can share interesting videos from diverse platforms and chat with others. These days, SNS like Facebook is the most popular platform for the user to share their interests. However, there are too diverse contents to share in SNS and there is no web site other than SNS that helps to collect interesting videos from different video platforms. Thus, I decided to develop new video sharing platform to meet those users’ needs.
