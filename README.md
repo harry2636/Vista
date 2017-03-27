@@ -5,6 +5,13 @@ Video sharing website that enables users to share videos from different sites. U
 ### Demo video is available in [https://youtu.be/APZCwddL2y4](https://youtu.be/APZCwddL2y4)
 ![video_intro](/img/video_thumbnail.png)
 
+## Description
+Vista is a video sharing web site where users can share interesting videos from diverse platforms and chat with others. These days, SNS like Facebook is the most popular platform for the user to share their interests. However, there are too diverse contents to share in SNS and there is no web site other than SNS that helps to collect interesting videos from different video platforms. Thus, I decided to develop new video sharing platform to meet those users’ needs.
+  
+In the design process, I found that there was a critical problem in video sharing process. The problem was that it is too annoying to get the embedding iframe code from the video and manually post it on the web site. So, I changed the initial technical choice to improve efficiency of the sharing process. The solution was to add chrome extension for sharing process. When users find interesting videos, they can just press button on the top-right to share them automatically. The result was that the time spent for sharing process was decreased from more than 5 seconds to 1 second. Despite there are some compatibility issues for other browsers, I think that the benefit of efficiency compensates for those disadvantages.
+  
+Also, I chose to use React.js as the Frontend framework for the web site because the web page needs frequent reloading for new posts. Users can keep track of latest post of the website without manually refreshing the website as React.js only reloads the DOM object that has been changed by the server. I think this choice helped to reduce unnecessary waiting times for users. 
+
 ## Installation
 ```sh
 $ npm install -g webpack babel nodemon cross-env
