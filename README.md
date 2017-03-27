@@ -1,5 +1,5 @@
 # Vista
-Video sharing website that enables users to share videos from different sites. Users can easily share videos with chrome extension.
+Video sharing website where users can share interesting videos from diverse platforms and chat with others. Users can easily share videos with chrome extension.
 
 ## Demo
 ### Demo video is available in [https://youtu.be/APZCwddL2y4](https://youtu.be/APZCwddL2y4)
@@ -45,6 +45,7 @@ Load Vista/chrome_extension folder as extension program and then enable it.
 * iframely
 * materializecss
 * mongoDB
+* socket.io
 
 ## References
 * tutorialspoint react.js tutorial : [https://www.tutorialspoint.com/reactjs/](https://www.tutorialspoint.com/reactjs/)
